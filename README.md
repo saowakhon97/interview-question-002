@@ -1,6 +1,6 @@
 # Interview Question 002
 
-A simple authentication system built with ASP.NET Core 8 and Angular 21.
+A simple authentication system built with ASP.NET Core 10 and Angular 21.
 
 ## Features
 
@@ -21,7 +21,7 @@ A simple authentication system built with ASP.NET Core 8 and Angular 21.
 
 ### Backend
 
-- ASP.NET Core 8 Web API
+- ASP.NET Core 10 Web API
 - Entity Framework Core
 - SQLite
 - JWT Authentication
@@ -55,7 +55,7 @@ Frontend
 
 ## Prerequisites
 
-- .NET 8 SDK
+- .NET 10 SDK
 - Node.js 20+
 - Angular CLI
 - SQLite
