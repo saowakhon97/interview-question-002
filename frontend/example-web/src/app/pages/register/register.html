@@ -1,0 +1,67 @@
+<div class="container mt-5">
+
+  <div class="card mx-auto" style="max-width:500px">
+
+    <div class="card-body">
+
+      <h2 class="mb-4">
+        Register
+      </h2>
+
+      <form [formGroup]="registerForm"
+            (ngSubmit)="register()">
+
+        <div class="mb-3">
+
+          <label>Username</label>
+
+          <input
+            class="form-control"
+            formControlName="username">
+
+        </div>
+
+        <div class="mb-3">
+
+          <label>Password</label>
+
+          <input
+            type="password"
+            class="form-control"
+            formControlName="password">
+
+        </div>
+
+        <div class="mb-3">
+
+          <label>Confirm Password</label>
+
+          <input
+            type="password"
+            class="form-control"
+            formControlName="confirmPassword">
+
+        </div>
+
+        <button
+          class="btn btn-primary w-100">
+
+          Register
+
+        </button>
+
+      </form>
+
+      <hr>
+
+      <a routerLink="/login">
+
+        Already have an account?
+
+      </a>
+
+    </div>
+
+  </div>
+
+</div>

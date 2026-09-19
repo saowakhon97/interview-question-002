@@ -1,0 +1,71 @@
+<div class="container mt-5">
+
+  <div class="card mx-auto" style="max-width:500px">
+
+    <div class="card-body">
+
+      <h2 class="mb-4">Login</h2>
+
+      <div
+        *ngIf="errorMessage"
+        class="alert alert-danger alert-dismissible fade show"
+        role="alert">
+
+        {{ errorMessage }}
+
+        <button
+          type="button"
+          class="btn-close"
+          aria-label="Close"
+          (click)="errorMessage = ''">
+        </button>
+
+      </div>
+
+      <form
+        [formGroup]="loginForm"
+        (ngSubmit)="login()">
+
+        <div class="mb-3">
+
+          <label>Username</label>
+
+          <input
+            class="form-control"
+            formControlName="username">
+
+        </div>
+
+        <div class="mb-3">
+
+          <label>Password</label>
+
+          <input
+            type="password"
+            class="form-control"
+            formControlName="password">
+
+        </div>
+
+        <button
+          class="btn btn-primary w-100">
+
+          Login
+
+        </button>
+
+      </form>
+
+      <hr>
+
+      <a routerLink="/register">
+
+        Create Account
+
+      </a>
+
+    </div>
+
+  </div>
+
+</div>
